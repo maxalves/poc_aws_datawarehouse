@@ -6,8 +6,10 @@
 
 ---
 
-# Desenho da Arquitetura (que estou validando no momento)
+# Desenho das Arquiteturas (que estou validando até então)
 ![Image](.images/ARQUITETURA.PNG)
+
+![Image](.images/ARQUITETURA02.PNG)
 
 - A ideia é que todas as aplicações publiquem dados no data streams, o objetivo do firehose é apenas pegar estes dados e inserir no S3 (datalake) no formato parquet.
 - O GLUE é uma ferramenta de ETL, com ele pretendo catalogar e separar os dados de acordo com algum critério antes de jogar no REDSHIFT que ficaria sendo nosso datawarehouse de dados já processados.
