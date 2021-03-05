@@ -1,0 +1,14 @@
+{
+  "head": {
+    "action_type": 1,
+    "action": "create"
+  },
+  "body": {
+    "payload": {
+      "user": {
+        "name": "Meu dado de exemplo",
+        "email": "teste@teste.com"
+      }
+    }
+  }
+}
