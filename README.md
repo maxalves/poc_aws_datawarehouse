@@ -13,6 +13,7 @@
 - O GLUE é uma ferramenta de ETL, com ele pretendo catalogar e separar os dados de acordo com algum critério antes de jogar no REDSHIFT que ficaria sendo nosso datawarehouse de dados já processados.
 - O resto da arquitetura pensarei após validar esta etapa de injestão e processamento.
 - Ainda não estudei como fazer schema validation, catalogação e análise destes dados, conforme for progredindo na arquitetura vou aprendendo
+- O Kinesis pode sair muito mais caro que o SQS em alguns casos, validarei uma opção cuja injestão ocorre pelo SQS. https://stackoverflow.com/questions/26623673/why-should-i-use-amazon-kinesis-and-not-sns-sqs (sétima resposta)
 
 # Requerimentos
 - AWS CLI - https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html
