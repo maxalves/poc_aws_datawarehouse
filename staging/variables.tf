@@ -11,5 +11,5 @@ variable "environment" {
 variable "bucket_name" {
   description = "AWS S3 bucket name"
   type        = string
-  default     = "data-bucket-poc-datawarehouse"
+  default     = "bucket-poc-datalake"
 }

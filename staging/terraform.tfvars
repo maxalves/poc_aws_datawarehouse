@@ -1,7 +1,8 @@
 /*
- Este é o nome bucket que ficará com os arquivos processados pelo Kinesis Data Firehose
+ Nome do bucket que servirá como datalake para os dados ainda não processados
+ aqui guardaremos os dados "crus" que passaram pelo kinesis firehose e são salvos em formato parquet
 */
-bucket_name                        = "bucket-poc-datawarehouse"
+bucket_name                        = "bucket-poc-datalake"
 
 /*
     Este repositório já foi feito pensando que podemos ter multiplos ambientes
