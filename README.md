@@ -37,9 +37,9 @@ setx AWS_DEFAULT_REGION=<< Região >>
 ```
 __Windows PowerShell__ 
 ```
-$Env:AWS_ACCESS_KEY_ID="AKIAIOSFODNN7EXAMPLE"
-$Env:AWS_SECRET_ACCESS_KEY="wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
-$Env:AWS_DEFAULT_REGION="us-west-2"
+$Env:AWS_ACCESS_KEY_ID=<< Seu ID de acesso >>
+$Env:AWS_SECRET_ACCESS_KEY=<< Sua Chave de acesso>>
+$Env:AWS_DEFAULT_REGION="us-east-1"
 ```
 
 ## Crie um bucket no AWS S3 para servir como seu remote backend
@@ -58,7 +58,7 @@ cd terraform/staging && terraform init  -reconfigure
 ## Terraform Plan
 Para realizar o Terraform Plan, você deverá executar o seguinte comando: 
 ```
-make init ENVIRONMENT=staging
+make plan
 ou
 cd terraform/staging && terraform plan
 
@@ -67,7 +67,7 @@ cd terraform/staging && terraform plan
 ## Terraform Apply
 Para criar todos os recursos em sua conta na aws
 ```
-make init ENVIRONMENT=staging
+make apply
 ou
 cd terraform/staging && terraform apply
 
@@ -76,7 +76,7 @@ cd terraform/staging && terraform apply
 ## Terraform destroy
 Para destruir a arquitetura e deletar todos os recursos da aws que foram criados no apply
 ```
-make init ENVIRONMENT=staging
+make destroy
 ou
 cd terraform/staging && terraform destroy
 
