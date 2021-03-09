@@ -7,15 +7,10 @@
 ---
 
 # Desenho das Arquiteturas (que estou validando até então)
-![Image](.images/ARQUITETURA.PNG)
+![Image](.images/ARQUITETURA-V3.PNG)
 
-![Image](.images/ARQUITETURA02.PNG)
 
-- A ideia é que todas as aplicações publiquem dados no data streams, o objetivo do firehose é apenas pegar estes dados e inserir no S3 (datalake) no formato parquet.
-- O GLUE é uma ferramenta de ETL, com ele pretendo catalogar e separar os dados de acordo com algum critério antes de jogar no REDSHIFT que ficaria sendo nosso datawarehouse de dados já processados.
-- O resto da arquitetura pensarei após validar esta etapa de injestão e processamento.
-- Ainda não estudei como fazer schema validation, catalogação e análise destes dados, conforme for progredindo na arquitetura vou aprendendo
-- O Kinesis pode sair muito mais caro que o SQS em alguns casos, validarei uma opção cuja injestão ocorre pelo SQS. https://stackoverflow.com/questions/26623673/why-should-i-use-amazon-kinesis-and-not-sns-sqs (sétima resposta)
+- A ideia desta arquitetura é entender como funcionam os serviços da AWS, e como disponibilizar os dados para integradores externos e armazenar estes dados para posterior análise.
 
 # Requerimentos
 - AWS CLI - https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html

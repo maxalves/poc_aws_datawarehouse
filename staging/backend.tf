@@ -4,7 +4,7 @@
 */
 terraform {
   backend "s3" {
-    bucket = "terraform-states-poc-datawarehouse"
+    bucket = "terraform-states-poc-datawarehouse2"
     key    = "project/terraform.tfstate"
     region = "us-east-1"
   }
