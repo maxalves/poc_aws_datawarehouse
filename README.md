@@ -7,7 +7,7 @@
 ---
 
 # Desenho das Arquiteturas (que estou validando até então)
-![Image](.images/ARQUITETURA-V3.PNG)
+![Image](.images/ARQUITETURA-v3.PNG)
 
 
 - A ideia desta arquitetura é entender como funcionam os serviços da AWS, e como disponibilizar os dados para integradores externos e armazenar estes dados para posterior análise.
