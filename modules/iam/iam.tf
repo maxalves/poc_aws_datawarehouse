@@ -1,7 +1,3 @@
-/*
-  Role do firehose
-  https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/kinesis_firehose_delivery_stream
-*/
 resource "aws_iam_role" "firehose_role" {
   name               = var.firehose_role_name
   assume_role_policy = <<EOF

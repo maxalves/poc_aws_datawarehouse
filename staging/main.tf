@@ -1,9 +1,3 @@
-/*
-  Carrega o módulo responsável pela criação dos recursos, passa nossas variaveis para o módulo
-  https://www.terraform.io/docs/language/modules/index.html
-*/
-
-
 module "iam" {
   source                             = "../modules/iam"
   firehose_role_name                 = var.firehose_role_name

@@ -1,7 +1,3 @@
-/*
-    Configuração do nosso provider
-    https://www.terraform.io/docs/language/providers/requirements.html
-*/
 terraform {
   required_providers {
     aws = {
